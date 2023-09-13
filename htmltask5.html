@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TASK 5</title>
+    <style>
+        .centered-table {
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+        }
+        
+        input  {
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <form action="process_registration.php" method="POST">
+        <table>
+            <tr>
+                <td>First Name:</td>
+                <td><input type="text" name="first_name" required></td>
+            </tr>
+            <tr>
+                <td>Last Name:</td>
+                <td><input type="text" name="last_name" required></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td>Re-enter Password:</td>
+                <td><input type="password" name="repassword" required></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <label><input type="radio" name="gender" value="male"> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                    <label><input type="radio" name="gender" value="other"> Other</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Age:</td>
+                <td><input type="number" name="age"></td>
+            </tr>
+            <tr>
+                <td>Phone Number:</td>
+                <td><input type="tel" name="phone"></td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td><input type="text" name="address"></td>
+            </tr>
+            <tr>
+                <td>State:</td>
+                <td><input type="text" name="state"></td>
+            </tr>
+            <tr>
+                <td>Country:</td>
+                <td>
+                    <select name="country">
+                        <option value="usa">USA</option>
+                        <option value="canada">Canada</option>
+                        <option value="uk">UK</option>
+                        <option value="india">India</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Languages Known:</td>
+                <td><input type="text" name="languages_known"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox" name="declaration" id="declaration">
+                    <label for="declaration">I hereby declare all the given details are true</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                     <input type="submit" value="Register">
+                </td>
+                
+                <td>
+                    <p style="text-align: right;">Login to <a href="https://example.com" target="_blank">Ethnus</a> website</p>
+                </td>
+                
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <form action="process_registration.php" method="POST">
+        <table>
+            <tr>
+                <td>First Name:</td>
+                <td><input type="text" name="first_name" required></td>
+            </tr>
+            <tr>
+                <td>Last Name:</td>
+                <td><input type="text" name="last_name" required></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td>Re-enter Password:</td>
+                <td><input type="password" name="repassword" required></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <label><input type="radio" name="gender" value="male"> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                    <label><input type="radio" name="gender" value="other"> Other</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Age:</td>
+                <td><input type="number" name="age"></td>
+            </tr>
+            <tr>
+                <td>Phone Number:</td>
+                <td><input type="tel" name="phone"></td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td><input type="text" name="address"></td>
+            </tr>
+            <tr>
+                <td>State:</td>
+                <td><input type="text" name="state"></td>
+            </tr>
+            <tr>
+                <td>Country:</td>
+                <td><input type="text" name="country"></td>
+            </tr>
+            <tr>
+                <td>Languages Known:</td>
+                <td><input type="text" name="languages_known"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox" name="declaration" id="declaration">
+                    <label for="declaration">hereby i declare all the given details are true</label>
+                </td>
+            </tr>
+        </table>
+        <p>Login to <a href="https://example.com" target="_blank">Ethnus</a> website</p>
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html> -->

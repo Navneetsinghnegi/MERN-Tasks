@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .navbar {
+        background-color: darkgray;
+        display: flex;
+      }
+
+      .nav-item {
+        text-decoration: none;
+        color: blue;
+        padding:10px 20px;
+        border-right: 1px solid blue;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      .nav-item:hover {
+        background-color: gray;
+        color: white;
+      }
+
+      .nav-item:last-child {
+        border-right: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="#" class="nav-item">Home</a>
+      <a href="#" class="nav-item">Java</a>
+      <a href="#" class="nav-item">HTML</a>
+      <a href="#" class="nav-item">CSS</a>
+    </div>
+  </body>
+</html>
